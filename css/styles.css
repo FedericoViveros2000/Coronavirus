@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* Estilos añadidos al sitio web */
+/* Para la fuente utilizada */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+/* Fuentes y colores utilizadas */
+/* Dark Mode Colors */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+body.dark {
+  background-color: #151421;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    
+    body{
+        background-color: #000;
+    }
+
+  } */
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+  -webkit-transition: -webkit-filter 1s linear;
+  transition: -webkit-filter 1s linear;
+  transition: filter 1s linear;
+  transition: filter 1s linear, -webkit-filter 1s linear;
+}
+
+body.dark .cover {
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+.text-color {
+  color: #ffffff !important;
+}
+
+.icono {
+  color: #eb2226;
+}
+
+.covid {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subir {
+  position: relative;
+}
+
+.hola {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.button-danger {
+  background: #eb2226;
+}
+
+.input-search {
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+.toggle {
+  font-size: 1.375rem;
+  color: #ffffff;
+}
+
+.icon-virus {
+  color: #eb2226;
+  font-size: 48px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transition: background-color 1s linear, -webkit-transform .7s;
+  transition: background-color 1s linear, -webkit-transform .7s;
+  transition: transform .7s, background-color 1s linear;
+  transition: transform .7s, background-color 1s linear, -webkit-transform .7s;
+}
+
+body.dark .icon-virus {
+  background-color: #100f19;
+}
+
+.icon-virus:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.title-analytics {
+  font-size: 2.5rem;
+  font-weight: 700;
+  -webkit-transition: color 1s linear;
+  transition: color 1s linear;
+}
+
+body.dark .title-analytics {
+  color: #fff;
+}
+
+.text-analytics {
+  font-size: 1rem;
+  color: #eb2226;
+  font-weight: 700;
+}
+
+.bg-situation {
+  background-color: #f7f7f7;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+body.dark .bg-situation {
+  background-color: #100f19;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+body.dark .text-dark {
+  color: #fff !important;
+}
+
+.more-info {
+  background-color: #eb2226;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.bg-cards {
+  background-color: #ffffff;
+}
+
+body.dark .bg-cards {
+  background-color: #151421;
+}
+
+.more-info:hover {
+  background-color: transparent;
+  border: 2px solid #eb2226;
+  color: #eb2226;
+}
+
+.image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+
+.text-coronavirus {
+  color: #9d9d9d;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-min {
+    width: 100%;
+    background-color: #000 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image {
+    height: 350px !important;
+  }
+}
+
+.font-information {
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body.dark .font-information {
+  color: #fff;
+}
+
+.font-information:hover {
+  color: #eb2226;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

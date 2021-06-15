@@ -1,0 +1,225 @@
+/* Estilos añadidos al sitio web */
+
+/* Para la fuente utilizada */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+@import './variables';
+
+body{
+
+    font-family: $font;
+    transition: background-color 1s linear;
+}
+
+body.dark{
+    background-color: $background-dark;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    
+    body{
+        background-color: #000;
+    }
+
+  } */
+
+.cover{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.6);
+    transition: filter 1s linear;
+}
+
+body.dark .cover{
+    filter: brightness(.4);
+
+}
+
+.text-color{
+    color: $font-color !important;
+}
+
+.icono{
+    color: $buttons-color ;
+}
+
+.covid{
+    font-size: 32px;
+    font-weight: $font-bold;
+}
+
+.subir{
+    position: relative;
+}
+
+.hola{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.button-danger{
+    background: $buttons-color;
+}
+
+.input-search{
+    background: transparent;
+    border: 1px solid $font-color;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+
+.h1{
+
+    font-size: 3.125rem;
+    font-weight: $font-bold;
+
+}
+
+.toggle{
+    font-size: 1.375rem;
+    color: $font-color;
+}
+
+.icon-virus{
+    color: $buttons-color;
+    font-size: 48px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $icon-background;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .7s, background-color 1s linear;
+
+    body.dark &{
+        background-color: $icon-background-dark;
+    }
+
+}
+
+
+.icon-virus:hover{
+    transform: translateY(-10px);
+}
+
+.title-analytics{
+    font-size: 2.5rem;
+    font-weight: $font-bold;
+    transition: color 1s linear;
+}
+
+body.dark .title-analytics{
+    color: $text-dark;
+}
+
+.text-analytics{
+    font-size: 1rem;
+    color: $buttons-color;
+    font-weight: $font-bold;
+}
+
+.bg-situation{
+    background-color: $background-situation;
+    transition: background-color 1s linear;
+
+    body.dark &{
+        background-color: $background-situation-dark;
+        transition: background-color 1s linear;
+    }
+
+}
+
+
+.text-dark{
+
+    body.dark &{
+
+        color: $text-dark !important;
+
+    }
+
+}
+
+.more-info{
+    background-color: $buttons-color;
+    text-decoration: none;
+    color: $font-color;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.bg-cards{
+    background-color: $font-color;
+
+    body.dark &{
+        background-color: $background-dark;
+    }
+
+}
+
+
+.more-info:hover{
+    background-color: transparent;
+    border: 2px solid $buttons-color;
+    color: $buttons-color;
+}
+
+.image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.text-coronavirus{
+    color: $info;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .bg-min{
+        width: 100%;
+        background-color: #000 !important;
+    }
+
+   
+
+  
+}
+
+@media screen and (max-width:576px) {
+        .image{
+            height: 350px!important;
+        }
+}
+
+.font-information{
+    font-size: 1rem;
+    font-weight: $font-bold;
+    cursor: pointer;
+
+    body.dark &{
+        color: $text-dark;
+    }
+
+}
+
+.font-information:hover{
+    color: $buttons-color;
+    cursor: pointer;
+}
+
+
+
+

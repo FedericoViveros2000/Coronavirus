@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+
+  <!-- Estilos de BOOTSTRAP -->
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- Estilos creados -->
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- FAVICON -->
+
+  <link rel="shortcut icon" href="./img/virus-solid-24.png" type="image/x-icon">
+
+  <!-- FONT AWESOME -->
+
+  <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- Para la barra de navegacion -->
+
+  <div class="container subir">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent hola">
+      <div class="container-fluid">
+        <a class="navbar-brand  text-color covid" href="#">C<i class="fas fa-virus icono"></i>VID</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="far fa-moon toggle"></i></span>
+          <span class="navbar-toggler-icon ms-3"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end bg-min" id="navbarScroll">
+          <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scrol">
+            <li class="nav-item me-4">
+              <a class="nav-link active text-color" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link text-color" href="#">Acerca de</a>
+            </li>
+
+            <li class="nav-item me-4">
+              <a class="nav-link disabled text-color" href="#" tabindex="-1" aria-disabled="true">Servicios</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link disabled text-color" href="#" tabindex="-1" aria-disabled="true">Contactos</a>
+            </li>
+
+          </ul>
+
+
+          <form class="d-flex">
+            <input class="form-control me-2 input-search bg-transparent text-light" type="search" placeholder="Search"
+              aria-label="Search">
+          </form>
+
+          <span class="ms-3 toggle" id="mode"><i class="far fa-moon"></i></span>
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <!-- Para el CARROUSEL -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade vh-100 overflow-hidden subir mb-5"
+    data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner w-100 h-100 d">
+      <div class="carousel-item active w-100 h-100" data-bs-interval="6000">
+        <img src="./img/Image1.jpg" class="d-block cover" alt="...">
+
+        <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
+          <h5 class="h1">First slide label</h5>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi sit modi autem,
+            similique tenetur ipsum provident corporis asperiores magnam aut, temporibus quam repellendus? Ipsa
+            inventore labore nostrum deserunt quasi?</p>
+          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+        </div>
+
+      </div>
+      <div class="carousel-item w-100 h-100" data-bs-interval="6000">
+        <img src="./img/Image2.jpg" class="d-block w-100 h-100 cover" alt="...">
+
+        <div
+          class="carousel-caption d-flex flex-column col-8 col-lg-6 pe-3 h-100 justify-content-center align-items-start">
+          <h5 class="h1">Second slide label</h5>
+          <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, voluptates.
+            Rem blanditiis quis ducimus aut laboriosam consectetur assumenda ut in! Nam alias provident sit quod minus
+            amet perferendis in tenetur? </p>
+          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+
+        </div>
+
+      </div>
+      <div class="carousel-item w-100  h-100" data-bs-interval="6000">
+        <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" class="d-block cover w-100" alt="...">
+
+        <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
+          <h5 class="h1">Third slide label</h5>
+          <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt at fuga, assumenda
+            est sunt quidem ut dolorum mollitia voluptate a tempore illo numquam ex obcaecati quos tempora quis dolor
+            eum? </p>
+          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Estadisticas -->
+
+  <div class="container">
+
+    <div class="container-fluid d-flex justify-content-evenly flex-wrap overflow-hidden">
+
+      <div class="card col-12 col-sm-6 col-lg-3 border-0 mb-5 mb-lg-3 bg-transparent">
+        <div class="card-body text-center">
+          <p class="icon-virus"><i class="fas fa-head-side-virus"></i></p>
+          <h5 class="card-title title-analytics my-2">1233000</h5>
+          <p class="card-text text-analytics mb-4">Casos Activos</p>
+          <a href="#" class="more-info">Card link</a>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
+        <div class="card-body">
+          <p class="icon-virus"><i class="fas fa-users"></i></p>
+          <h5 class="card-title title-analytics my-2">182020</h5>
+          <p class="card-text text-analytics mb-4">Total de Recuperados</p>
+          <a href="#" class="more-info">Card link</a>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
+        <div class="card-body">
+          <p class="icon-virus"><i class="fas fa-skull-crossbones"></i></p>
+          <h5 class="card-title title-analytics my-2">71912</h5>
+          <p class="card-text text-analytics mb-4">Total de fallecidos</p>
+          <a href="#" class="more-info">Card link</a>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
+        <div class="card-body">
+          <p class="icon-virus"><i class="fas fa-shield-virus"></i></p>
+          <h5 class="card-title title-analytics my-2">11912</h5>
+          <p class="card-text text-analytics mb-4">Vacunados</p>
+          <a href="#" class="more-info">Card link</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <!-- Cuidados contra el coronavirus -->
+
+  <div class="container overflow-hidden mb-5 d-flex flex-column mt-5">
+
+    <div class="row">
+
+      <div class="col-12 col-lg-6 m-auto">
+
+        <h5 class="title-analytics mb-4">Coronavirus Disease Outbreak Situation</h5>
+
+        <p class="mb-4 text-coronavirus">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex
+          ea. </p>
+
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Avoid touching your face.</p>
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Cover your mouth and nose when coughing.</p>
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Stay home if you feel unwell.</p>
+
+      </div>
+
+      <div class="col-6 col-lg-3">
+
+        <div class="image-contenedor">
+
+          <img src="./img/pexels-matilda-wormwood-4098787.jpg" alt="" class="image">
+
+        </div>
+
+
+      </div>
+
+      <div class="col-6 col-lg-3">
+
+        <div class="image-contenedor">
+
+          <img src="./img/pexels-matilda-wormwood-4098787.jpg" alt="" class="image">
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- Prevencion -->
+
+  <div class="container-fluid bg-situation">
+
+
+    <div class="container h-100 d-flex justify-content-center align-items-center py-0 py-lg-5">
+
+      <div class="row">
+
+        <div class="col-12 col-lg-6 m-auto">
+
+          <h5 class="title-analytics mb-4 mt-lg-0 mt-5">Coronavirus Disease Outbreak Situation</h5>
+
+          <p class="mb-4 text-coronavirus">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris
+            nisi ut ex ea. </p>
+
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Avoid touching your face.</p>
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Cover your mouth and nose when coughing.</p>
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Stay home if you feel unwell.</p>
+
+          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+
+
+        </div>
+
+        <div class="col-12 col-lg-6  m-0  d-grid flex-column gap-4  py-4 overflow-hidden">
+
+
+
+          <div class="row h-100 w-100 m-0 p-0 ">
+
+            <div class="col-12 col-sm-5 col-lg- mb-4 mb-lg-0 text-center m-auto bg-cards rounded py-4 px-sm-0">
+
+              <p class="icon-virus"><i class="fas fa-hands-wash"></i></p>
+
+              <p class="font-information">Lava tus manos <br> frecuentemente</p>
+
+            </div>
+
+            <div class="col-12 col-sm-5 col-lg-5 mb-4 mb-lg-0 text-center m-auto bg-cards rounded py-4">
+
+              <p class="icon-virus"><i class="fas fa-people-arrows"></i></p>
+
+              <p class="font-information">Manten el <br> distanciamiento social</p>
+
+            </div>
+
+          </div>
+
+          <div class="row h-100 w-100 m-0 p-0 ">
+
+            <div class="col-12 col-sm-5 col-lg-5 mb-4 mb-lg-0 text-center m-auto bg-cards rounded py-4 px-sm-0">
+
+              <p class="icon-virus"><i class="fas fa-surprise"></i></p>
+
+              <p class="font-information">Evita tocar tu rostro <br> frecuentemente</p>
+
+            </div>
+
+            <div class="col-12 col-sm-5 col-lg-5 mb-4 mb-lg-0 text-center m-auto bg-cards rounded py-4 px-sm-0">
+
+              <p class="icon-virus"><i class="fas fa-wind"></i></p>
+
+              <p class="font-information">Mantener una buena circulacion del aire</p>
+
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <section class="container">
+
+    <h5 class="title-analytics mb-4 mt-5 text-center">Take Steps To Protect Yourself</h5>
+
+    <div class="row d-flex justify-content-evenly align-items-baseline">
+
+      <div class="col-10 col-md-3">
+
+        
+        <img src="./img/pexels-anna-shvets-4167544.jpg" alt=" " class="image">
+
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore.</p>
+
+      </div>
+      <div class="col-10 col-md-3">
+
+        <img src="./img/pexels-anna-shvets-3962516.jpg" alt=" " class="image h-50">
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore.</p>
+
+      </div>
+      <div class="col-10 col-md-3">
+
+        <img src="./img/pexels-nataliya-vaitkevich-5863400.jpg" alt=" " class="image h-50">
+
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore.</p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- JAVASCRIPT DE BOOTSTRAP -->
+
+  <script src="./js/bootstrap.js"></script>
+
+  <script src="./js/index.js"></script>
+
+  <!-- De font awesome -->
+
+  <script src="./js/all.min.js"></script>
+
+</body>
+
+</html>
