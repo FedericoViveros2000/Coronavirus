@@ -14,13 +14,6 @@ body.dark {
   background-color: #151421;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    
-    body{
-        background-color: #000;
-    }
-
-  } */
 .cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -129,6 +122,22 @@ body.dark .title-analytics {
   font-weight: 700;
 }
 
+.contact {
+  height: 70vh;
+}
+
+.email {
+  background-color: #ffffff;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+body.dark .email {
+  background-color: #100f19;
+  border: thin solid #fff;
+  color: #fff;
+}
+
 .bg-situation {
   background-color: #f7f7f7;
   -webkit-transition: background-color 1s linear;
@@ -165,6 +174,16 @@ body.dark .bg-cards {
   background-color: #151421;
 }
 
+.bg-cards-notice {
+  border: 0.5px solid #9d9d9d;
+}
+
+body.dark .bg-cards-notice {
+  border: 0.5px solid #f7f7f7;
+  color: #fff;
+  background-color: #100f19;
+}
+
 .more-info:hover {
   background-color: transparent;
   border: 2px solid #eb2226;
@@ -182,6 +201,55 @@ body.dark .bg-cards {
   color: #9d9d9d;
 }
 
+.font-information {
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body.dark .font-information {
+  color: #fff;
+}
+
+.img-card {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  width: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.img-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.font-information:hover {
+  color: #eb2226;
+  cursor: pointer;
+}
+
+.btn-guia {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-guia.active {
+  position: fixed;
+  z-index: 200;
+  right: 2vw;
+  bottom: 4vh;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .bg-min {
     width: 100%;
@@ -195,18 +263,60 @@ body.dark .bg-cards {
   }
 }
 
-.font-information {
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-}
+/* 
+    TODO Para detectar el modo de acuerdo a la configuaracion del sistema
+*/
+/* @media (prefers-color-scheme: dark) {
 
-body.dark .font-information {
-  color: #fff;
-}
+    body {
+        background-color: #000;
+    }
 
-.font-information:hover {
-  color: #eb2226;
-  cursor: pointer;
-}
+
+    .cover {
+
+        filter: brightness(.4);
+
+
+    }
+
+    .icon-virus {
+
+
+        background-color: $icon-background-dark;
+
+
+    }
+
+    .title-analytics {
+        color: $text-dark;
+    }
+
+    .bg-situation {
+
+        background-color: $background-situation-dark;
+        transition: background-color 1s linear;
+
+    }
+
+
+    .text-dark {
+
+        color: $text-dark !important;
+
+    }
+
+
+    .bg-cards {
+
+        background-color: $background-dark;
+
+    }
+
+    .font-information {
+        color: $text-dark;
+
+    }
+
+} */
 /*# sourceMappingURL=styles.css.map */

@@ -37,10 +37,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent hola">
       <div class="container-fluid">
         <a class="navbar-brand  text-color covid" href="#">C<i class="fas fa-virus icono"></i>VID</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        <span id="mode"><i class="far fa-moon toggle"></i></span>
+
+        <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="far fa-moon toggle"></i></span>
-          <span class="navbar-toggler-icon ms-3"></span>
+          <span class="navbar-toggler-icon text-light"></span>
         </button>
 
 
@@ -68,8 +69,8 @@
               aria-label="Search">
           </form>
 
-          <span class="ms-3 toggle" id="mode"><i class="far fa-moon"></i></span>
-
+          
+          
         </div>
       </div>
     </nav>
@@ -315,7 +316,7 @@
     </div>
   </div>
 
-  <section class="container">
+  <section class="container mb-5">
 
     <h5 class="title-analytics mb-4 mt-5 text-center">Take Steps To Protect Yourself</h5>
 
@@ -323,12 +324,13 @@
 
       <div class="col-10 col-md-3">
 
-        
+
         <img src="./img/pexels-anna-shvets-4167544.jpg" alt=" " class="image">
 
         <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor
           incididunt ut labore.</p>
 
       </div>
@@ -337,7 +339,8 @@
         <img src="./img/pexels-anna-shvets-3962516.jpg" alt=" " class="image h-50">
         <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor
           incididunt ut labore.</p>
 
       </div>
@@ -347,7 +350,8 @@
 
         <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor
           incididunt ut labore.</p>
 
       </div>
@@ -357,6 +361,113 @@
 
   </section>
 
+
+  <!-- Slider de las experiencias -->
+
+  <div id="carouselExampleIndicators" class="carousel slide vh-100 carousel-fade" data-bs-ride="carousel"
+    data-bs-interval="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner vh-100">
+      <div class="carousel-item active w-100 h-100">
+        <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" class="d-block cover" alt="...">
+      </div>
+      <div class="carousel-item w-100 h-100">
+        <img src="./img/cdc-CV9QfjqXVy0-unsplash.jpg" class="d-block cover" alt="...">
+      </div>
+      <div class="carousel-item w-100 h-100">
+        <img src="./img/cdc-y5C4QTKbu_k-unsplash.jpg" class="d-block cover" alt="...">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Noticias del coronavirus -->
+
+  <div class="container">
+
+    <div class="row d-flex justify-content-evenly flex-wrap align-items-center">
+
+      <h5 class="title-analytics my-5 text-center">Stay Updated with Our <br>
+        News Feed.</h5>
+
+      <div class="col-12  col-lg-4">
+
+        <div class="card overflow-hidden bg-cards-notice m-auto mb-4 mb-lg-0" style="width: 18rem;">
+          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Medico</h5>
+            <p class="card-text">Hola Mundo</p>
+            <p class="text-end">Junio, 16 2021</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12  col-lg-4">
+
+        <div class="card overflow-hidden bg-cards-notice m-auto mb-4 mb-lg-0" style="width: 18rem;">
+
+          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Medico</h5>
+            <p class="card-text">Hola Mundo</p>
+            <p class="text-end">Junio, 16 2021</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-lg-4">
+
+        <div class="card overflow-hidden bg-cards-notice m-auto mb-3 mb-lg-0" style="width: 18rem;">
+          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Medico</h5>
+            <p class="card-text">Hola Mundo</p>
+            <p class="text-end">Junio, 16 2021</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Seccion para recibir las noticias -->
+
+
+    <section class="container-fluid mt-5 d-flex flex-column contact bg-situation text-center justify-content-center align-items-center ">
+
+      <h5 class="title-analytics my-2 my-lg-4">Subscribe to our Newsletter</h5>
+
+      <p class="text-coronavirus"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore.</p>
+
+      <form class="row col-12 d-flex justify-content-center w-100 mt-3">
+
+        <div class="col-9 col-lg-5 h-100 d-flex align-baseline">
+          <input type="email" class="form-control m-0 email" id="inputPassword2" placeholder="Correo electrónico">
+        </div>
+
+        <div class="col-3 col-lg-1">
+
+          <button type="submit" class="btn button-danger mb-3 text-white w-100 h-100"><i
+              class="fas fa-paper-plane"></i></button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <!-- BOTON PARA SUBIR DIRECTO -->
+
+    <button type="button" class="btn-guia"><i class="fas fa-angle-up"></i></button>
 
   <!-- JAVASCRIPT DE BOOTSTRAP -->
 

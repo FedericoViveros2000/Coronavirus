@@ -6,87 +6,80 @@
 
 @import './variables';
 
-body{
+body {
 
     font-family: $font;
     transition: background-color 1s linear;
 }
 
-body.dark{
+body.dark {
     background-color: $background-dark;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    
-    body{
-        background-color: #000;
-    }
-
-  } */
-
-.cover{
+.cover {
     object-fit: cover;
     width: 100%;
     height: 100%;
     filter: brightness(.6);
     transition: filter 1s linear;
+
+    body.dark & {
+        filter: brightness(.4);
+
+    }
+
 }
 
-body.dark .cover{
-    filter: brightness(.4);
-
-}
-
-.text-color{
+.text-color {
     color: $font-color !important;
 }
 
-.icono{
-    color: $buttons-color ;
+.icono {
+    color: $buttons-color;
 }
 
-.covid{
+.covid {
     font-size: 32px;
     font-weight: $font-bold;
 }
 
-.subir{
+.subir {
     position: relative;
 }
 
-.hola{
+.hola {
     position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
 }
 
-.button-danger{
+.button-danger {
     background: $buttons-color;
 }
 
-.input-search{
+.input-search {
     background: transparent;
     border: 1px solid $font-color;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify !important;
 }
 
-.h1{
+.h1 {
 
     font-size: 3.125rem;
     font-weight: $font-bold;
 
 }
 
-.toggle{
+.toggle {
     font-size: 1.375rem;
     color: $font-color;
 }
 
-.icon-virus{
+.icon-virus {
     color: $buttons-color;
     font-size: 48px;
     margin-bottom: 20px;
@@ -99,38 +92,53 @@ body.dark .cover{
     padding-right: 15px;
     transition: transform .7s, background-color 1s linear;
 
-    body.dark &{
+    body.dark & {
         background-color: $icon-background-dark;
     }
 
 }
 
 
-.icon-virus:hover{
+.icon-virus:hover {
     transform: translateY(-10px);
 }
 
-.title-analytics{
+.title-analytics {
     font-size: 2.5rem;
     font-weight: $font-bold;
     transition: color 1s linear;
 }
 
-body.dark .title-analytics{
+body.dark .title-analytics {
     color: $text-dark;
 }
 
-.text-analytics{
+.text-analytics {
     font-size: 1rem;
     color: $buttons-color;
     font-weight: $font-bold;
 }
 
-.bg-situation{
+.contact{
+    height: 70vh;
+}
+
+.email{
+   background-color: $font-color;
+   transition: background-color 1s linear;
+   body.dark &{
+       background-color: $background-situation-dark;
+       border: thin solid $text-dark;
+       color: $text-dark;
+   }
+
+}
+
+.bg-situation {
     background-color: $background-situation;
     transition: background-color 1s linear;
-
-    body.dark &{
+    
+    body.dark & {
         background-color: $background-situation-dark;
         transition: background-color 1s linear;
     }
@@ -138,9 +146,9 @@ body.dark .title-analytics{
 }
 
 
-.text-dark{
+.text-dark {
 
-    body.dark &{
+    body.dark & {
 
         color: $text-dark !important;
 
@@ -148,7 +156,7 @@ body.dark .title-analytics{
 
 }
 
-.more-info{
+.more-info {
     background-color: $buttons-color;
     text-decoration: none;
     color: $font-color;
@@ -159,67 +167,164 @@ body.dark .title-analytics{
     transition: all .5s;
 }
 
-.bg-cards{
+.bg-cards {
     background-color: $font-color;
 
-    body.dark &{
+    body.dark & {
         background-color: $background-dark;
     }
 
 }
 
+.bg-cards-notice{
+    border: .5px solid $info;
 
-.more-info:hover{
+    
+    body.dark &{
+        border: .5px solid $background-situation;
+        color: $text-dark;
+        background-color: $background-situation-dark;
+    }
+
+}
+
+
+.more-info:hover {
     background-color: transparent;
     border: 2px solid $buttons-color;
     color: $buttons-color;
 }
 
-.image{
+.image {
     width: 100%;
     object-fit: cover;
     border-radius: 7px;
 }
 
-.text-coronavirus{
+.text-coronavirus {
     color: $info;
 }
 
-
-@media screen and (max-width:1024px){
-
-    .bg-min{
-        width: 100%;
-        background-color: #000 !important;
-    }
-
-   
-
-  
-}
-
-@media screen and (max-width:576px) {
-        .image{
-            height: 350px!important;
-        }
-}
-
-.font-information{
+.font-information {
     font-size: 1rem;
     font-weight: $font-bold;
     cursor: pointer;
 
-    body.dark &{
+    body.dark & {
         color: $text-dark;
     }
 
 }
 
-.font-information:hover{
+.img-card{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    transition: transform .5s;
+}
+
+.img-card:hover{
+    transform: scale(1.050);
+}
+
+.font-information:hover {
     color: $buttons-color;
     cursor: pointer;
 }
 
+.btn-guia{
+    opacity: 0;
+    visibility: hidden;
+
+    &.active{
+
+        position: fixed;
+        z-index: 200;
+        right: 2vw;
+        bottom: 4vh;
+        background-color: red;
+        padding:  10px 20px;
+        border-radius: 50%;
+        border: none;
+        color: $text-dark;
+        font-size: 24px;
+
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .bg-min {
+        width: 100%;
+        background-color: #000 !important;
+    }
 
 
 
+
+}
+
+@media screen and (max-width:576px) {
+    .image {
+        height: 350px !important;
+    }
+}
+
+/* 
+    TODO Para detectar el modo de acuerdo a la configuaracion del sistema
+*/
+
+/* @media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #000;
+    }
+
+
+    .cover {
+
+        filter: brightness(.4);
+
+
+    }
+
+    .icon-virus {
+
+
+        background-color: $icon-background-dark;
+
+
+    }
+
+    .title-analytics {
+        color: $text-dark;
+    }
+
+    .bg-situation {
+
+        background-color: $background-situation-dark;
+        transition: background-color 1s linear;
+
+    }
+
+
+    .text-dark {
+
+        color: $text-dark !important;
+
+    }
+
+
+    .bg-cards {
+
+        background-color: $background-dark;
+
+    }
+
+    .font-information {
+        color: $text-dark;
+
+    }
+
+} */
