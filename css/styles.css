@@ -192,9 +192,15 @@ body.dark .bg-cards-notice {
 
 .image {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 7px;
+}
+
+body.dark .image {
+  -webkit-filter: brightness(0.75);
+          filter: brightness(0.75);
 }
 
 .text-coronavirus {
@@ -235,21 +241,36 @@ body.dark .font-information {
 .btn-guia {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity .7s linear, visibility .7s linear;
+  transition: opacity .7s linear, visibility .7s linear;
 }
 
-.btn-guia.active {
+.btn-guia.hidden {
   position: fixed;
   z-index: 200;
-  right: 2vw;
-  bottom: 4vh;
+  right: 2vh;
+  bottom: 2vh;
   background-color: red;
-  padding: 10px 20px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 2rem;
+  opacity: 1;
+  visibility: visible;
 }
 
+.slider-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+/* .container__img{
+    width: 90%;
+} */
 @media screen and (max-width: 1024px) {
   .bg-min {
     width: 100%;

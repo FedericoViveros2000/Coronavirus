@@ -23,6 +23,10 @@
 
   <link rel="stylesheet" href="./css/all.min.css">
 
+  <!-- ANIMATE CSS -->
+
+  <link rel="stylesheet" href="./css/animate.min.css">
+
 </head>
 
 <body>
@@ -91,40 +95,36 @@
     </div>
     <div class="carousel-inner w-100 h-100 d">
       <div class="carousel-item active w-100 h-100" data-bs-interval="6000">
-        <img src="./img/Image1.jpg" class="d-block cover" alt="...">
+        <img src="./img/Image1.jpg" loading="lazy" class="d-block cover" alt="...">
 
         <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
-          <h5 class="h1">First slide label</h5>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi sit modi autem,
-            similique tenetur ipsum provident corporis asperiores magnam aut, temporibus quam repellendus? Ipsa
-            inventore labore nostrum deserunt quasi?</p>
-          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+          <h5 class="h1 animate__animated animate__backInDown text-lg-start">¡Registrate para la vacunación!</h5>
+          <p class="text-justify">La vacunación contra el COVID-19 es la manera más segura de ayudar a generar protección. Vacúnese independientemente de que haya tenido COVID-19</p>
+            <a href="https://www.vacunate.gov.py/formularios/registro/index.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Registrarme</a>
+          
         </div>
 
       </div>
       <div class="carousel-item w-100 h-100" data-bs-interval="6000">
-        <img src="./img/Image2.jpg" class="d-block w-100 h-100 cover" alt="...">
+        <img src="./img/Image2.jpg" loading="lazy" class="d-block w-100 h-100 cover" alt="...">
 
         <div
           class="carousel-caption d-flex flex-column col-8 col-lg-6 pe-3 h-100 justify-content-center align-items-start">
-          <h5 class="h1">Second slide label</h5>
-          <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, voluptates.
-            Rem blanditiis quis ducimus aut laboriosam consectetur assumenda ut in! Nam alias provident sit quod minus
-            amet perferendis in tenetur? </p>
-          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+          <h5 class="h1 text-lg-start">Lávate las manos correctamente</h5>
+          <p class="text-justify">El Lavado frecuente de manos, la mejor arma contra la enfermedad. El lavado debe realizarse de forma enérgica con agua y jabón por al menos 20 segundos varias veces al día, con esto se elimina el virus. </p>
+          <a href="https://www.mspbs.gov.py/portal/20697/covid-19-lavado-frecuente-de-manos-la-mejor-arma-contra-la-enfermedad.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer más</a>
 
         </div>
 
       </div>
       <div class="carousel-item w-100  h-100" data-bs-interval="6000">
-        <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" class="d-block cover w-100" alt="...">
+        <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" loading="lazy" class="d-block cover w-100" alt="...">
 
         <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
-          <h5 class="h1">Third slide label</h5>
-          <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt at fuga, assumenda
-            est sunt quidem ut dolorum mollitia voluptate a tempore illo numquam ex obcaecati quos tempora quis dolor
-            eum? </p>
-          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+          <h5 class="h1 text-lg-start">¡Utiliza el tapabocas correctamente!</h5>
+          <p class="text-justify">El uso de mascarillas quirúrgicas o tapabocas es esencial como medida de prevención del contagio por covid-19. Sea que te encuentres sano o tengas alguna condición o enfermedad respiratoria, debes utilizarlo. </p>
+            <a href="https://www.mspbs.gov.py/portal/20917/tapabocas-iquestcuando-donde-como-usarlos.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer más</a>
+
 
         </div>
 
@@ -144,14 +144,14 @@
 
   <div class="container">
 
-    <div class="container-fluid d-flex justify-content-evenly flex-wrap overflow-hidden">
+    <div class="container-fluid d-flex justify-content-evenly flex-wrap overflow-hidden invisible animate__animated" id="stadistics">
 
       <div class="card col-12 col-sm-6 col-lg-3 border-0 mb-5 mb-lg-3 bg-transparent">
         <div class="card-body text-center">
           <p class="icon-virus"><i class="fas fa-head-side-virus"></i></p>
           <h5 class="card-title title-analytics my-2">1233000</h5>
           <p class="card-text text-analytics mb-4">Casos Activos</p>
-          <a href="#" class="more-info">Card link</a>
+          <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
       </div>
 
@@ -160,7 +160,7 @@
           <p class="icon-virus"><i class="fas fa-users"></i></p>
           <h5 class="card-title title-analytics my-2">182020</h5>
           <p class="card-text text-analytics mb-4">Total de Recuperados</p>
-          <a href="#" class="more-info">Card link</a>
+          <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
       </div>
 
@@ -169,7 +169,7 @@
           <p class="icon-virus"><i class="fas fa-skull-crossbones"></i></p>
           <h5 class="card-title title-analytics my-2">71912</h5>
           <p class="card-text text-analytics mb-4">Total de fallecidos</p>
-          <a href="#" class="more-info">Card link</a>
+          <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
       </div>
 
@@ -178,7 +178,7 @@
           <p class="icon-virus"><i class="fas fa-shield-virus"></i></p>
           <h5 class="card-title title-analytics my-2">11912</h5>
           <p class="card-text text-analytics mb-4">Vacunados</p>
-          <a href="#" class="more-info">Card link</a>
+          <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
       </div>
 
@@ -190,40 +190,38 @@
 
   <!-- Cuidados contra el coronavirus -->
 
-  <div class="container overflow-hidden mb-5 d-flex flex-column mt-5">
+  <div class="container overflow-hidden mb-5 d-flex flex-column mt-5 invisible" id="container__situation">
 
     <div class="row">
 
-      <div class="col-12 col-lg-6 m-auto">
+      <div class="col-12 col-lg-6 m-auto animate__animated " id="situation">
 
-        <h5 class="title-analytics mb-4">Coronavirus Disease Outbreak Situation</h5>
+        <h5 class="title-analytics mb-4">¿Como se propaga el virus?</h5>
 
-        <p class="mb-4 text-coronavirus">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex
-          ea. </p>
+        <p class="mb-4 text-coronavirus">El virus se propaga típicamente a través de pequeñas gotas que se propagan cuando una persona con COVID-19 tose o exhala. Luego, otra persona puede contraer el virus al inhalar estas gotas o tocar objetos contaminados por estas gotas y luego tocarse los ojos, la nariz o la boca).  </p>
 
-        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Avoid touching your face.</p>
-        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Cover your mouth and nose when coughing.</p>
-        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Stay home if you feel unwell.</p>
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Por ello es imprescindible: </p>
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Mantener las areas ventiladas.</p>
+        <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> El uso de tapabocas.</p>
 
       </div>
 
-      <div class="col-6 col-lg-3">
+      <div class="col-6 col-lg-3 animate__animated" id="keeps">
 
         <div class="image-contenedor">
 
-          <img src="./img/pexels-matilda-wormwood-4098787.jpg" alt="" class="image">
+          <img src="./img/pexels-matilda-wormwood-4098787.jpg" loading="lazy" alt="" class="image">
 
         </div>
 
 
       </div>
 
-      <div class="col-6 col-lg-3">
+      <div class="col-6 col-lg-3 animate__animated" id="keeps2">
 
         <div class="image-contenedor">
 
-          <img src="./img/pexels-matilda-wormwood-4098787.jpg" alt="" class="image">
+          <img src="./img/pexels-matilda-wormwood-4099481.jpg" loading="lazy" alt="" class="image">
 
         </div>
 
@@ -241,23 +239,21 @@
   <div class="container-fluid bg-situation">
 
 
-    <div class="container h-100 d-flex justify-content-center align-items-center py-0 py-lg-5">
+    <div class="container h-100 d-flex justify-content-center align-items-center py-0 py-lg-5 animate__animated invisible" id="prevention">
 
       <div class="row">
 
         <div class="col-12 col-lg-6 m-auto">
 
-          <h5 class="title-analytics mb-4 mt-lg-0 mt-5">Coronavirus Disease Outbreak Situation</h5>
+          <h5 class="title-analytics mb-4 mt-lg-0 mt-5">Cómo protegerse y proteger a los demás</h5>
 
-          <p class="mb-4 text-coronavirus">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris
-            nisi ut ex ea. </p>
+          <p class="mb-4 text-coronavirus">La Organización Mundial de la Salud (OMS) dio a conocer una serie de medidas para evitar que se propague la nueva cepa de coronavirus detectada en China, foco inicial del contagio: </p>
+          
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Lavarse las manos frecuentemente</p>
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> No estrechar la mano o dar besos en la mejilla al saludar.</p>
+          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Mantener la distancia y evitar las multitudes.</p>
 
-          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Avoid touching your face.</p>
-          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Cover your mouth and nose when coughing.</p>
-          <p class="text-dark fw-bold"><i class="fas fa-check icono"></i> Stay home if you feel unwell.</p>
-
-          <button type="button" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer mas</button>
+          <a href="https://espanol.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target="_blank" class="more-info fw-bold my-2 d-inline-block">Leer más</a>
 
 
         </div>
@@ -316,43 +312,37 @@
     </div>
   </div>
 
-  <section class="container mb-5">
+  <section class="container mb-5 animate__animated invisible" id="steps">
 
-    <h5 class="title-analytics mb-4 mt-5 text-center">Take Steps To Protect Yourself</h5>
+    <h5 class="title-analytics mb-4 mt-5 text-center">Medidas para proteger y protegerse del COVID-19</h5>
 
     <div class="row d-flex justify-content-evenly align-items-baseline">
 
       <div class="col-10 col-md-3">
 
 
-        <img src="./img/pexels-anna-shvets-4167544.jpg" alt=" " class="image">
+        <img src="./img/pexels-anna-shvets-4167544.jpg" loading="lazy" alt=" " class="image">
 
-        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Usar tapabocas</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor
-          incididunt ut labore.</p>
+        <p class="text-coronavirus text-center"> Siempre que estemos en espacios públicos, cerca de personas con las que no convivimos. Sobre todo si resulta difícil mantener una distancia de 2 metros. </p>
 
       </div>
       <div class="col-10 col-md-3">
 
-        <img src="./img/pexels-anna-shvets-3962516.jpg" alt=" " class="image h-50">
-        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+        <img src="./img/pexels-anna-shvets-3962516.jpg" loading="lazy" alt=" " class="image h-50">
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Mantener la higiene de manos</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor
-          incididunt ut labore.</p>
+        <p class="text-coronavirus text-center"> Mantener una buena higiene de manos pude reducir drásticamente la probabilidad de contagio en diversos entornos.</p>
 
       </div>
       <div class="col-10 col-md-3">
 
-        <img src="./img/pexels-nataliya-vaitkevich-5863400.jpg" alt=" " class="image h-50">
+        <img src="./img/pexels-nataliya-vaitkevich-5863400.jpg" loading="lazy" alt=" " class="image h-50">
 
-        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Wear A Face Mask</h5>
+        <h5 class="fs-5 fw-bold mt-3 text-center text-dark"> Vacunarse cuando lo antes posible</h5>
 
-        <p class="text-coronavirus text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor
-          incididunt ut labore.</p>
+        <p class="text-coronavirus text-center"> Esta es la medida más efectiva par evitar casos graves de la enfermedad, por ello es imprescindible la vacunacion lo antes posible.</p>
 
       </div>
 
@@ -364,26 +354,28 @@
 
   <!-- Slider de las experiencias -->
 
-  <div id="carouselExampleIndicators" class="carousel slide vh-100 carousel-fade" data-bs-ride="carousel"
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade p-3 p-lg-5 text-center d-flex justify-content-center"  data-bs-ride="carousel"
     data-bs-interval="false">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators animate__animated invisible" id="life2">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner vh-100">
-      <div class="carousel-item active w-100 h-100">
-        <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" class="d-block cover" alt="...">
+    <div class="carousel-inner container__img p-3 p-lg-5 ">
+      <div class="carousel-item active text-center">
+        <img src="./img/COVID_1.jpg" loading="lazy" class="d-block slider-img" alt="...">
+
+        <a href="./img/COVID_1.jpg" class="btn button-danger px-2 px-lg-3 py-2 text-color fs-6 fw-bold mt-5 mb-2" download> Descargar Infografia</a>
+
       </div>
-      <div class="carousel-item w-100 h-100">
-        <img src="./img/cdc-CV9QfjqXVy0-unsplash.jpg" class="d-block cover" alt="...">
+      <div class="carousel-item w-100 h-100 text-center">
+        <img src="./img/COVID_2.jpg" loading="lazy" class="d-block slider-img" alt="...">
+
+        <a href="./img/COVID_2.jpg" class="btn button-danger  px-2 px-lg-3 py-2  text-color fs-6 fw-bold mt-5 mb-2" download> Descargar Infografia</a>
+
       </div>
-      <div class="carousel-item w-100 h-100">
-        <img src="./img/cdc-y5C4QTKbu_k-unsplash.jpg" class="d-block cover" alt="...">
-      </div>
+     
     </div>
 
   </div>
@@ -392,19 +384,18 @@
 
   <div class="container">
 
-    <div class="row d-flex justify-content-evenly flex-wrap align-items-center">
+    <div class="row d-flex justify-content-evenly flex-wrap align-items-center invisible animate__animated" id="stay">
 
-      <h5 class="title-analytics my-5 text-center">Stay Updated with Our <br>
-        News Feed.</h5>
+      <h5 class="title-analytics my-5 text-center">Otros consejos:</h5>
 
       <div class="col-12  col-lg-4">
 
         <div class="card overflow-hidden bg-cards-notice m-auto mb-4 mb-lg-0" style="width: 18rem;">
-          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <img src="./img/pexels-polina-tankilevitch-3873191.jpg" loading="lazy" class="card-img-top img-card image" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Medico</h5>
-            <p class="card-text">Hola Mundo</p>
-            <p class="text-end">Junio, 16 2021</p>
+            <h5 class="card-title fw-bold">Evita la automedicación</h5>
+            <br>
+            <p class="text-end">Junio, 17 2021</p>
           </div>
         </div>
 
@@ -413,11 +404,10 @@
 
         <div class="card overflow-hidden bg-cards-notice m-auto mb-4 mb-lg-0" style="width: 18rem;">
 
-          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <img src="./img/pexels-cottonbro-3952224.jpg" loading="lazy" class="card-img-top img-card image" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Medico</h5>
-            <p class="card-text">Hola Mundo</p>
-            <p class="text-end">Junio, 16 2021</p>
+            <h5 class="card-title fw-bold">Registrese para la vacunación</h5>
+            <p class="text-end">Junio, 17 2021</p>
           </div>
         </div>
 
@@ -425,11 +415,10 @@
       <div class="col-12 col-lg-4">
 
         <div class="card overflow-hidden bg-cards-notice m-auto mb-3 mb-lg-0" style="width: 18rem;">
-          <img src="./img/pexels-matilda-wormwood-4099481.jpg" class="card-img-top img-card" alt="...">
+          <img src="./img/pexels-anna-shvets-4483323.jpg" class="card-img-top img-card image" loading="lazy" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Medico</h5>
-            <p class="card-text">Hola Mundo</p>
-            <p class="text-end">Junio, 16 2021</p>
+            <h5 class="card-title fw-bold">Mantengase al dia con los nuevos avances</h5>
+            <p class="text-end">Junio, 17 2021</p>
           </div>
         </div>
 
@@ -441,12 +430,11 @@
   <!-- Seccion para recibir las noticias -->
 
 
-    <section class="container-fluid mt-5 d-flex flex-column contact bg-situation text-center justify-content-center align-items-center ">
+    <section class="container-fluid mt-5 d-flex flex-column contact bg-situation text-center justify-content-center align-items-center invisible animate__animated" id="suscribe">
 
-      <h5 class="title-analytics my-2 my-lg-4">Subscribe to our Newsletter</h5>
+      <h5 class="title-analytics my-2 my-lg-4">Subscribase a nuestro boletín</h5>
 
-      <p class="text-coronavirus"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore.</p>
+      <p class="text-coronavirus"> Para mantenerse al día con todas las novedades acerca del COVID-19</p>
 
       <form class="row col-12 d-flex justify-content-center w-100 mt-3">
 
@@ -467,13 +455,13 @@
 
     <!-- BOTON PARA SUBIR DIRECTO -->
 
-    <button type="button" class="btn-guia"><i class="fas fa-angle-up"></i></button>
+    <button type="button" class="btn-guia" id="topUp"><i class="fas fa-angle-up"></i></button>
 
   <!-- JAVASCRIPT DE BOOTSTRAP -->
 
   <script src="./js/bootstrap.js"></script>
 
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" type="module"></script>
 
   <!-- De font awesome -->
 

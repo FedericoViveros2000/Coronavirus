@@ -197,8 +197,14 @@ body.dark .title-analytics {
 
 .image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 7px;
+
+    body.dark &{
+        filter: brightness(.75);
+    }
+
 }
 
 .text-coronavirus {
@@ -236,22 +242,37 @@ body.dark .title-analytics {
     opacity: 0;
     visibility: hidden;
 
-    &.active{
+    transition: opacity .7s linear, visibility .7s linear;
+
+    &.hidden{
 
         position: fixed;
         z-index: 200;
-        right: 2vw;
-        bottom: 4vh;
+        right: 2vh;
+        bottom: 2vh;
         background-color: red;
-        padding:  10px 20px;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         border: none;
         color: $text-dark;
-        font-size: 24px;
-
+        font-size: 2rem;
+        opacity: 1;
+        visibility: visible;
+        
     }
 
 }
+
+.slider-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .container__img{
+    width: 90%;
+} */
 
 @media screen and (max-width:1024px) {
 
