@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>API</title>
+  <title>Coronavirus</title>
 
   <!-- Estilos de BOOTSTRAP -->
 
@@ -34,44 +34,38 @@
 
   <!-- Para la barra de navegacion -->
 
-  <div class="container subir">
+  <div class="container-fluid  subir" id="start">
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent hola">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-transparent mx-0 px-lg-5  hola" id="menu">
       <div class="container-fluid">
         <a class="navbar-brand  text-color covid" href="#">C<i class="fas fa-virus icono"></i>VID</a>
         <span id="mode"><i class="far fa-moon toggle"></i></span>
 
-        <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon text-light"></span>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon text-white" ></span>
         </button>
 
 
-        <div class="collapse navbar-collapse d-lg-flex justify-content-end bg-min" id="navbarScroll">
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarScroll">
           <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scrol">
             <li class="nav-item me-4">
-              <a class="nav-link active text-color" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active text-color" aria-current="page" href="#start">Inicio</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link text-color" href="#">Acerca de</a>
+              <a class="nav-link text-color" href="#parameters">Estadísticas</a>
             </li>
 
             <li class="nav-item me-4">
-              <a class="nav-link disabled text-color" href="#" tabindex="-1" aria-disabled="true">Servicios</a>
+              <a class="nav-link  text-color" href="#notices">Consejos</a>
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link disabled text-color" href="#" tabindex="-1" aria-disabled="true">Contactos</a>
+              <a class="nav-link  text-color" href="#infography">Infografía</a>
             </li>
 
           </ul>
-
-
-          <form class="d-flex">
-            <input class="form-control me-2 input-search bg-transparent text-light" type="search" placeholder="Search"
-              aria-label="Search">
-          </form>
 
           
           
@@ -93,12 +87,12 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner w-100 h-100 d">
+    <div class="carousel-inner w-100 h-100 w-100">
       <div class="carousel-item active w-100 h-100" data-bs-interval="6000">
         <img src="./img/Image1.jpg" loading="lazy" class="d-block cover" alt="...">
 
         <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
-          <h5 class="h1 animate__animated animate__backInDown text-lg-start">¡Registrate para la vacunación!</h5>
+          <h5 class="h1 animate__animated animate__backInDown text-start">¡Registrate para la vacunación!</h5>
           <p class="text-justify">La vacunación contra el COVID-19 es la manera más segura de ayudar a generar protección. Vacúnese independientemente de que haya tenido COVID-19</p>
             <a href="https://www.vacunate.gov.py/formularios/registro/index.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Registrarme</a>
           
@@ -109,8 +103,8 @@
         <img src="./img/Image2.jpg" loading="lazy" class="d-block w-100 h-100 cover" alt="...">
 
         <div
-          class="carousel-caption d-flex flex-column col-8 col-lg-6 pe-3 h-100 justify-content-center align-items-start">
-          <h5 class="h1 text-lg-start">Lávate las manos correctamente</h5>
+          class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
+          <h5 class="h1 animate__animated animate__backInDown text-start">Lávate las manos correctamente</h5>
           <p class="text-justify">El Lavado frecuente de manos, la mejor arma contra la enfermedad. El lavado debe realizarse de forma enérgica con agua y jabón por al menos 20 segundos varias veces al día, con esto se elimina el virus. </p>
           <a href="https://www.mspbs.gov.py/portal/20697/covid-19-lavado-frecuente-de-manos-la-mejor-arma-contra-la-enfermedad.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer más</a>
 
@@ -121,7 +115,7 @@
         <img src="./img/cdc-90ejoVTj2-M-unsplash.jpg" loading="lazy" class="d-block cover w-100" alt="...">
 
         <div class="carousel-caption d-flex flex-column col-8 col-lg-6 h-100 justify-content-center align-items-start">
-          <h5 class="h1 text-lg-start">¡Utiliza el tapabocas correctamente!</h5>
+          <h5 class="h1 animate__animated animate__backInDown text-start">¡Utiliza el tapabocas <br> correctamente!</h5>
           <p class="text-justify">El uso de mascarillas quirúrgicas o tapabocas es esencial como medida de prevención del contagio por covid-19. Sea que te encuentres sano o tengas alguna condición o enfermedad respiratoria, debes utilizarlo. </p>
             <a href="https://www.mspbs.gov.py/portal/20917/tapabocas-iquestcuando-donde-como-usarlos.html" target="_blank" class="btn button-danger px-4 py-2 text-color fs-6 fw-bold">Leer más</a>
 
@@ -142,14 +136,14 @@
 
   <!-- Estadisticas -->
 
-  <div class="container">
+  <div class="container" id="parameters">
 
     <div class="container-fluid d-flex justify-content-evenly flex-wrap overflow-hidden invisible animate__animated" id="stadistics">
 
       <div class="card col-12 col-sm-6 col-lg-3 border-0 mb-5 mb-lg-3 bg-transparent">
         <div class="card-body text-center">
           <p class="icon-virus"><i class="fas fa-head-side-virus"></i></p>
-          <h5 class="card-title title-analytics my-2">1233000</h5>
+          <h5 class="card-title title-analytics my-2">52.290</h5>
           <p class="card-text text-analytics mb-4">Casos Activos</p>
           <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
@@ -158,7 +152,7 @@
       <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
         <div class="card-body">
           <p class="icon-virus"><i class="fas fa-users"></i></p>
-          <h5 class="card-title title-analytics my-2">182020</h5>
+          <h5 class="card-title title-analytics my-2">341.264</h5>
           <p class="card-text text-analytics mb-4">Total de Recuperados</p>
           <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
@@ -167,7 +161,7 @@
       <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
         <div class="card-body">
           <p class="icon-virus"><i class="fas fa-skull-crossbones"></i></p>
-          <h5 class="card-title title-analytics my-2">71912</h5>
+          <h5 class="card-title title-analytics my-2">11.521</h5>
           <p class="card-text text-analytics mb-4">Total de fallecidos</p>
           <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
@@ -176,9 +170,9 @@
       <div class="card col-12 col-sm-6 col-lg-3 border-0 text-center mb-5 mb-lg-3 bg-transparent">
         <div class="card-body">
           <p class="icon-virus"><i class="fas fa-shield-virus"></i></p>
-          <h5 class="card-title title-analytics my-2">11912</h5>
+          <h5 class="card-title title-analytics my-2">422.474</h5>
           <p class="card-text text-analytics mb-4">Vacunados</p>
-          <a href="https://www.mspbs.gov.py/reporte-covid19.html" target="_blank" class="more-info fw-bold">Más Info</a>
+          <a href="http://pai.mspbs.gov.py/" target="_blank" class="more-info fw-bold">Más Info</a>
         </div>
       </div>
 
@@ -355,14 +349,14 @@
   <!-- Slider de las experiencias -->
 
   <div id="carouselExampleIndicators" class="carousel slide carousel-fade p-3 p-lg-5 text-center d-flex justify-content-center"  data-bs-ride="carousel"
-    data-bs-interval="false">
+    data-bs-interval="3000" >
     <div class="carousel-indicators animate__animated invisible" id="life2">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
     </div>
-    <div class="carousel-inner container__img p-3 p-lg-5 ">
+    <div class="carousel-inner container__img p-3 p-lg-5 " id="infography">
       <div class="carousel-item active text-center">
         <img src="./img/COVID_1.jpg" loading="lazy" class="d-block slider-img" alt="...">
 
@@ -382,7 +376,7 @@
 
   <!-- Noticias del coronavirus -->
 
-  <div class="container">
+  <div class="container" id="notices">
 
     <div class="row d-flex justify-content-evenly flex-wrap align-items-center invisible animate__animated" id="stay">
 
@@ -406,8 +400,8 @@
 
           <img src="./img/pexels-cottonbro-3952224.jpg" loading="lazy" class="card-img-top img-card image" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Registrese para la vacunación</h5>
-            <p class="text-end">Junio, 17 2021</p>
+            <h5 class="card-title fw-bold"> <a href="https://www.vacunate.gov.py/formularios/registro/index.html" target="_blank" class="enlace-footer">Registrese para la vacunación</a> </h5>
+            <p class="text-end">Junio, 21 2021</p>
           </div>
         </div>
 
@@ -415,10 +409,10 @@
       <div class="col-12 col-lg-4">
 
         <div class="card overflow-hidden bg-cards-notice m-auto mb-3 mb-lg-0" style="width: 18rem;">
-          <img src="./img/pexels-anna-shvets-4483323.jpg" class="card-img-top img-card image" loading="lazy" alt="...">
+          <img src="./img/maps.jpg" class="card-img-top img-card image" loading="lazy" alt="...">
           <div class="card-body">
-            <h5 class="card-title fw-bold">Mantengase al dia con los nuevos avances</h5>
-            <p class="text-end">Junio, 17 2021</p>
+            <h5 class="card-title fw-bold"> <a href="https://www.vacunate.gov.py/index-centro-vacunacion.html" target="_blank" class="enlace-footer"> Centros de Vacunaciones Paraguay</a></h5>
+            <p class="text-end">Junio, 21 2021</p>
           </div>
         </div>
 
@@ -451,11 +445,49 @@
 
       </form>
 
+      
+
     </section>
 
     <!-- BOTON PARA SUBIR DIRECTO -->
 
     <button type="button" class="btn-guia" id="topUp"><i class="fas fa-angle-up"></i></button>
+
+
+    <!-- FOOTER DEL SITIO -->
+
+    <footer class="container-fluid py-5">
+      <div class="row ">
+
+        <div class="col-12 col-lg-4 text-center">
+          <h5 class="mt-2 fs-5 text-dark fw-bold">Fecha de Publicacion</h5>
+          <p class="text-coronavirus text-center">Lunes, 21 de Junio del 2021</p>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center">
+
+          <h5 class="mt-2 fs-5 text-dark fw-bold">Categoría</h5>
+          <p class="text-coronavirus text-center">Medica</p>
+
+        </div>
+
+        <div class="col-12 col-lg-4 text-center">
+
+          <h5 class="mt-2 fs-5 text-dark fw-bold">Información</h5>
+
+          <p><a href="https://www.vacunate.gov.py/" class="enlace-footer">Vacunate.gov.py</a></p>
+          <p><a href="https://www.mspbs.gov.py/portal/20697/covid-19-lavado-frecuente-de-manos-la-mejor-arma-contra-la-enfermedad.html" class="enlace-footer">Lavado de Manos</a></p>
+          <p><a href="https://espanol.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" class="enlace-footer">CDC-COVID-19</a></p>
+          <p><a href="https://www.mspbs.gov.py/reporte-covid19.html" class="enlace-footer">Reporte COVID-19</a></p>
+          <p><a href="https://www.mspbs.gov.py/portal/20917/tapabocas-iquestcuando-donde-como-usarlos.html" class="enlace-footer">Utilización del Tapabocas</a></p>
+          <p><a href="https://www.vacunate.gov.py/index-centro-vacunacion.html" class="enlace-footer">Centros de vacunaciones Paraguay</a></p>
+        </div>
+        
+      </div>
+
+      <p class="my-3 fs-5 text-dark fw-bold text-center"><span>Sitio web Desarrollado por &copyJosé Viveros</span></p>
+
+    </footer>
 
   <!-- JAVASCRIPT DE BOOTSTRAP -->
 

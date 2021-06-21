@@ -11,6 +11,8 @@ export default function animationElements() {
     const $lifes = document.getElementById('life2');
     const $stay = document.getElementById('stay');
     const $suscribe = document.getElementById('suscribe');
+    const $menu = document.getElementById('menu');
+    const $navEnlaces = document.querySelectorAll('.text-color')
     /* 
     
     ? Animaciones del sitio web
@@ -89,12 +91,37 @@ export default function animationElements() {
      */
 
     heightAnimate = $suscribe.offsetTop;
-
+    
     if (heightAnimate - 400 < scrollPage) {
         $suscribe.classList.remove('invisible');
         $suscribe.classList.add('animate__zoomIn');
     }
+    
+    
+    console.log("El scrollPage es de:"+scrollPage);
+    console.log("El height es de:"+heightAnimate);
+
+    if (scrollPage > 500) {
+        $menu.classList.remove('bg-transparent');
+        $menu.classList.add('color');
+
+        $navEnlaces.forEach(enlaces => {
+            
+            enlaces.classList.add('si')
+
+        });
+            
 
 
+    } else{
+        $menu.classList.add('bg-transparent');
+        $menu.classList.remove('color');
+        $navEnlaces.forEach(enlaces => {
+            
+            enlaces.classList.remove('si')
+
+        });    }
+
+   
 
 }
